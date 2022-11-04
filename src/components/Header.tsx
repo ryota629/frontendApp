@@ -1,14 +1,6 @@
 import { AppBar, Toolbar, styled } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
-import { makeStyles } from "@material-ui/core/styles";
-
-const useStyles = makeStyles(() => ({
-  typographyStyles: {
-    flex: 1,
-    paddingLeft: "60px",
-  },
-}));
 
 const Buttons = styled(Button)`
   height: 30px;
@@ -18,21 +10,20 @@ const Buttons = styled(Button)`
 `;
 
 function Header() {
-  const classes = useStyles();
   return (
     <div>
-      <AppBar position="static" style={{ backgroundColor: "#000000" }}>
+      <AppBar position="static" sx={{ backgroundColor: "#000000" }}>
         <Toolbar>
           <Typography
             variant="h4"
             component="div"
-            className={classes.typographyStyles}
+            sx={{flex: 1,paddingLeft: "60px"}}
           >
           </Typography>
           <Typography
             variant="h3"
             component="div"
-            className={classes.typographyStyles}
+            sx={{flex: 1,paddingLeft: "60px"}}
           >
             Movie App
           </Typography>

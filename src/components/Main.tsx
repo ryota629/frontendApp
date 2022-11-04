@@ -1,4 +1,4 @@
-// import { makeStyles } from "@material-ui/core/styles";
+
 import { requests } from "../service/request";
 import SearchMovie from "./SearchMovie";
 import WatchedList from "./WatchedList";
