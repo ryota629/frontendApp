@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 3000;
 app.use(express.static('build'));
 
 app.use((req, res, next) => {
-  res.sendFile(path.join(__dirname, "../movieapp-frontend", "build", "index.html"));
+  res.sendFile(path.join(__dirname, "../movieApp-frontend", "build", "index.html"));
 });
 
 
