@@ -93,7 +93,6 @@ export const WatchedRow = ({ datas, detailurl }: Props) => {
         margin="40px"
       >
         <Grid container spacing={2}>
-          {/* マジックナンバーのため、変数を作ること */}
           {datas.slice(startPage, endPage).map((movied: any, id: number) => (
             <Grid item xs={2} key={id}>
               <Card sx={{ maxWidth: 300, height: 400 }}>
